@@ -1,2 +1,3 @@
 # Hey Party
-Desenvolvimento  de uma carteira digital, usando Flutter e Dart.
+Desenvolvimento  um app para entrar a festa ideal para vc.
+Usando Flutter e Dart.
