@@ -47,40 +47,51 @@ class Login extends StatelessWidget{
           icone: Icons.lock,),
 
 
-        ElevatedButton.icon(
-          label: Text('Sign In'),
-          icon: Icon(Icons.login),
-          style: ElevatedButton.styleFrom(
-            primary: Colors.deepPurpleAccent[700],
-            padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
-            onPrimary: Colors.white,
-            shadowColor: Colors.black,
-            elevation: 5,
-            textStyle: TextStyle(
-                fontSize: 24
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton.icon(
+                label: Text('Sign In'),
+                icon: Icon(Icons.login),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.deepPurpleAccent[700],
+                  padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
+                  onPrimary: Colors.white,
+                  shadowColor: Colors.black,
+                  elevation: 5,
+                  textStyle: TextStyle(
+                      fontSize: 24
+                  ),
+                ),//style
+                onPressed: () {
+                },
+              ),
             ),
-          ),//style
-          onPressed: () {
-          },
-        ),
 
-        ElevatedButton.icon(
-          label: Text('Sign Up'),
-          icon: Icon(Icons.assignment),
-          style: ElevatedButton.styleFrom(
-            primary: Colors.green[300],
-            padding: const EdgeInsets.all(8.0),
-            onPrimary: Colors.white,
-            shadowColor: Colors.black,
-            elevation: 5,
-            textStyle: TextStyle(
-                fontSize: 24
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton.icon(
+                label: Text('Sign Up'),
+                icon: Icon(Icons.assignment),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.green[300],
+                  padding: const EdgeInsets.all(8.0),
+                  onPrimary: Colors.white,
+                  shadowColor: Colors.black,
+                  elevation: 5,
+                  textStyle: TextStyle(
+                      fontSize: 24
+                  ),
+                ),//style
+                onPressed: () {
+                  // ignore: unnecessary_statements
+                  Navigator.of(context).push(_createRoute());
+                },
+              ),
             ),
-          ),//style
-          onPressed: () {
-            // ignore: unnecessary_statements
-            Navigator.of(context).push(_createRoute());
-          },
+          ],
         ),
 
       ],
