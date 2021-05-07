@@ -1,5 +1,5 @@
-import 'package:carteiradigital/components/CampoInput.dart';
-import 'package:carteiradigital/formularios/Registro.dart';
+import 'package:heyparty/components/CampoInput.dart';
+import 'package:heyparty/formularios/Registro.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget{
@@ -56,7 +56,7 @@ class Login extends StatelessWidget{
                 label: Text('Sign In'),
                 icon: Icon(Icons.login),
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.deepPurpleAccent[700],
+                  primary: Colors.green[300],
                   padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
                   onPrimary: Colors.white,
                   shadowColor: Colors.black,
